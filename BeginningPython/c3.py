@@ -1,15 +1,12 @@
-###########################
-# 1. 字符串格式化
-# 2. 字符串模板
-#
-#
-###########################
-
+##coding=UTF-8
+'''
+1. 字符串格式化
+2. 字符串模板
+'''
 
 # error：字符串不允许部分赋值
 # website = 'http://www.baidu.com'
 # website[-3:] = 'org'
-
 
 # 字符串格式化
 format = "Hello, %s. Is your age %d?. And you scored %.2f points"
@@ -49,7 +46,7 @@ print("---------------------------------")
 # print(s.substitute(d))
 
 print("---------------------------------")
-# 不会报错
+# safe_substitute()不会报错
 s = Template('$a, $b, $c')
 d = {}
 d['a']='value1'
